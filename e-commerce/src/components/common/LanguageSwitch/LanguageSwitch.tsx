@@ -17,7 +17,7 @@ const languageMap: Record<
   fr: { label: "Français", dir: "ltr", active: false },
 };
 
-const LanguageSwitch = (): JSX.Element => {
+const LanguageSwitch = () => {
   const windowSize = useWindowSize();
   const isMounted = useIsMounted();
   const { selectedLang } = usePreferences();

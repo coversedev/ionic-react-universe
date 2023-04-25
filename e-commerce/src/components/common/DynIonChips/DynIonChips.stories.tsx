@@ -1,21 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import DynIonChips from "./DynIonChips";
+import { setupIonicReact } from "@ionic/react";
 
-/* Core CSS required for Ionic components to work properly */
-import "@ionic/react/css/core.css";
-
-/* Basic CSS for apps built with Ionic */
-import "@ionic/react/css/normalize.css";
-import "@ionic/react/css/structure.css";
-import "@ionic/react/css/typography.css";
-
-/* Optional CSS utils that can be commented out */
-import "@ionic/react/css/padding.css";
-import "@ionic/react/css/float-elements.css";
-import "@ionic/react/css/text-alignment.css";
-import "@ionic/react/css/text-transformation.css";
-import "@ionic/react/css/flex-utils.css";
-import "@ionic/react/css/display.css";
+setupIonicReact();
 
 const chips = [
   {
@@ -41,8 +28,15 @@ const meta: Meta<typeof DynIonChips> = {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "DynIonChips",
+  title: "Chips/DynIonChips",
   component: DynIonChips,
+  args: {
+    chipValues: chips,
+    onRemoveChipHandler: (id: any) =>
+      console.log(`Removing chip with ID ${id}`),
+    activatedChipHandler: (chip: any) => console.log(`Activating chip`, chip),
+  },
+  tags: ["autodocs"],
 };
 export default meta;
 type Story = StoryObj<typeof DynIonChips>;
@@ -50,9 +44,6 @@ type Story = StoryObj<typeof DynIonChips>;
 export const Default: Story = {
   args: {
     //👇 The args you need here will depend on your component
-    chipValues: chips,
-    onRemoveChipHandler: (id) => console.log(`Removing chip with ID ${id}`),
-    activatedChipHandler: (chip) => console.log(`Activating chip`, chip),
     activatedChipId: -1,
   },
 };
@@ -60,9 +51,6 @@ export const Default: Story = {
 export const Activated: Story = {
   args: {
     //👇 The args you need here will depend on your component
-    chipValues: chips,
-    onRemoveChipHandler: (id) => console.log(`Removing chip with ID ${id}`),
-    activatedChipHandler: (chip) => console.log(`Activating chip`, chip),
     activatedChipId: 1,
   },
 };
@@ -70,9 +58,6 @@ export const Activated: Story = {
 export const CustomColor: Story = {
   args: {
     //👇 The args you need here will depend on your component
-    chipValues: chips,
-    onRemoveChipHandler: (id) => console.log(`Removing chip with ID ${id}`),
-    activatedChipHandler: (chip) => console.log(`Activating chip`, chip),
     activatedChipId: -1,
     color: "tertiary",
   },

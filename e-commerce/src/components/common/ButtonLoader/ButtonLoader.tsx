@@ -5,7 +5,7 @@ import classNames, { Argument } from "classnames";
 import "./ButtonLoader.scss";
 
 type ButtonLoaderProps = {
-  classNamesVal?: Argument[];
+  classNamesVal?: string[];
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
   onClick: (e: any) => any;
@@ -29,7 +29,7 @@ const ButtonLoader = ({
   raised = false,
   animation = "glow",
   color = "primary",
-  id,
+  id = "button-loader-dynamic",
 }: ButtonLoaderProps) => {
   return (
     <div

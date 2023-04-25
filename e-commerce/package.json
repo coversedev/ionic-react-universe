@@ -33,16 +33,18 @@
     "react-i18next": "^12.2.2",
     "react-router": "^5.3.4",
     "react-router-dom": "^5.3.4",
-    "sass": "^1.62.0",
     "swiper": "^9.2.4",
-    "usehooks-ts": "^2.9.1"
+    "usehooks-ts": "^2.9.1",
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
     "@capacitor/cli": "4.7.3",
+    "@storybook/addon-a11y": "^7.0.7",
     "@storybook/addon-essentials": "^7.0.7",
     "@storybook/addon-interactions": "^7.0.7",
     "@storybook/addon-links": "^7.0.7",
     "@storybook/blocks": "^7.0.7",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^7.0.7",
     "@storybook/react-vite": "^7.0.7",
     "@storybook/testing-library": "^0.0.14-next.2",
