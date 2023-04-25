@@ -1,0 +1,14 @@
+{
+	"common": {
+		"selectLang": "Select Language",
+		"time": "Time",
+		"browseFiles": "Browse for file(s)",
+		"files": "File List"
+	},
+	"pages": {
+		"home": {
+			"title": "Feeds",
+			"description": "Feeds"
+		}
+	}
+}

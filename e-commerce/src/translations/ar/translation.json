@@ -1,0 +1,14 @@
+{
+  "common": {
+    "selectLang": "اختار اللغة",
+    "time": "زمن",
+    "browseFiles": "تصفح بحثًا عن ملف (ملفات)",
+    "files": "قائمة الملفات"
+  },
+  "pages": {
+    "home": {
+      "title": "يغذي",
+      "description":  "يغذي"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.button-loader-wrapper {
+	display: block;
+	position: relative;
+	width: 100%;
+
+	ion-button {
+		width: inherit;
+	}
+
+	/* By default, hide the spinner */
+	.btn-spinner {
+		display: none;
+	}
+	/* By default, hide the glow */
+	.btn-glow {
+		display: none;
+	}
+
+	.loader-children {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		color: var(--ion-color-primary-contrast);
+
+		p {
+			color: var(--ion-color-primary-contrast);
+		}
+
+		ion-icon {
+			font-size: calc(var(--app-bigger-font) / 1.4);
+		}
+	}
+}
+
+.button-loader-wrapper.animation-spinner {
+	--button-loader-spinner-size: 20px;
+	--button-loader-spinner-color: #ccc;
+
+	.btn-spinner {
+		display: block;
+		width: var(--button-loader-spinner-size);
+		height: var(--button-loader-spinner-size);
+		font-size: var(--button-loader-spinner-size);
+		line-height: var(--button-loader-spinner-size);
+		color: var(--button-loader-spinner-color);
+		margin-right: var(--app-narrow-margin);
+	}
+	.btn-glow {
+		display: none;
+	}
+}
+
+.button-loader-wrapper.animation-glow {
+	--button-loader-glow-size: 20px;
+	--button-loader-glow-color: #ccc;
+	--button-loader-glow-radius: 50%;
+
+	.btn-glow {
+		display: block;
+		width: var(--button-loader-glow-size);
+		height: var(--button-loader-glow-size);
+		background: transparent;
+		border-radius: var(--button-loader-glow-radius);
+		margin: 0 var(--app-fair-margin) 0 0;
+		border: 2px solid transparent;
+		animation: btn-glow 1s ease infinite;
+	}
+	.btn-spinner {
+		display: none;
+	}
+}
+
+@keyframes btn-glow {
+	0% {
+		box-shadow: 0 0 0 0.4em darken(#777676, 10%),
+			0 0 0 0.1em darken(#777676, 10%);
+		transform: rotate(360deg);
+	}
+	50% {
+		border-top-color: #777676;
+	}
+	100% {
+		box-shadow: 0 0 0 0.4em darken(#777676, 10%), 0 0 0 3.6em transparent;
+	}
+}

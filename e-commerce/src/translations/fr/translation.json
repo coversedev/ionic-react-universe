@@ -1,0 +1,14 @@
+{
+  "common": {
+    "selectLang": "Choisir la langue",
+    "time": "Temps",
+    "browseFiles": "Parcourir les fichiers",
+    "files": "Liste de fichiers"
+  },
+  "pages": {
+    "home": {
+      "title": "Flux",
+      "description": "Flux"
+    }
+  }
+}
