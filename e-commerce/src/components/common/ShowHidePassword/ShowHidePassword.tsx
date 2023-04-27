@@ -49,7 +49,7 @@ const ShowHidePassword = ({
       {children}
       <IonButton
         fill="clear"
-        slot="icon-only"
+        slot={isIcon ? "icon-only" : undefined}
         className="type-toggle"
         onClick={toggleShow}
       >
