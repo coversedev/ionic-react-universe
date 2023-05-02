@@ -1,0 +1,17 @@
+.rainbow-btn {
+  --border-radius: 8px;
+  --box-shadow: none;
+  transition: all .4s;
+
+  &:hover {
+    transform: translateY(-10px);
+    --box-shadow: 0 7px 0 -2px var(--ion-color-danger), 0 15px 0 -4px var(--ion-color-secondary),
+      0 16px 10px -3px var(--ion-color-secondary);
+  }
+
+  &:active {
+    transform: translateY(-5px);
+    --box-shadow: 0 2px 0 -2px var(--ion-color-danger), 0 8px 0 -4px var(--ion-color-secondary),
+      0 12px 10px -3px var(--ion-color-secondary);
+  }
+}

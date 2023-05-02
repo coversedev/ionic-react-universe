@@ -1,0 +1,57 @@
+.button {
+  --padding-end: 0;
+  --padding-start: 0;
+
+  .box {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "W";
+      position: absolute;
+      top: 0;
+      background: var(--ion-color-primary-shade);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(100%);
+      transition: transform 0.4s;
+    }
+
+    &:nth-child(2)::before {
+      transform: translateY(-100%);
+      content: "O";
+    }
+
+    &:nth-child(3)::before {
+      content: "R";
+    }
+
+    &:nth-child(4)::before {
+      transform: translateY(-100%);
+      content: "L";
+    }
+
+    &:nth-child(5)::before {
+      content: "D";
+    }
+  }
+
+  &:hover {
+    .box {
+      &:before {
+        transform: translateY(0);
+      }
+    }
+  }
+}

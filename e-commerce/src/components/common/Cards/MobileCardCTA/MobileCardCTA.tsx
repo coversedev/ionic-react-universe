@@ -4,14 +4,11 @@ import {
   IonCardSubtitle,
   IonCardTitle,
   IonCardContent,
-  IonButton,
-  IonIcon,
-  IonButtons,
   IonLabel,
 } from "@ionic/react";
-import { logoGooglePlaystore, logoApple } from "ionicons/icons";
+import MobileStoreButton from "../../Buttons/MobileStoreButton/MobileStoreButton";
+
 import "./MobileCardCTA.scss";
-import MobileStoreButton from "../MobileStoreButton/MobileStoreButton";
 
 const MobileCardCTA = () => {
   return (

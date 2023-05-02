@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import React from "react";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -28,7 +29,29 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    darkMode: {
+      darkClass: "dark",
+      lightClass: "light",
+      stylePreview: true,
+    },
   },
+  decorators: [
+    (Story) => (
+      <section className="stories-wrapper-coverse">
+        <div
+          style={{
+            margin: "3em",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
+          <Story />
+        </div>
+      </section>
+    ),
+  ],
 };
 
 export default preview;

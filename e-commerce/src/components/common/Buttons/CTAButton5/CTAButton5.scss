@@ -1,0 +1,22 @@
+.btn-neon {
+  --box-shadow: none;
+  height: 40px;
+  --border-radius: 8px;
+  ion-icon {
+    box-shadow: 0.1em 0.1em 0.6em 0.2em rgba(var(--ion-color-secondary-rgb), 0.7);
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 15px;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    transform: translate(-0.05em, -0.05em);
+    --box-shadow: 0.35em 0.35em rgba(var(--ion-color-secondary-rgb), 0.8);
+  }
+
+  &:active {
+    transform: translate(0.05em, 0.05em);
+    --box-shadow: 0.2em 0.2em rgba(var(--ion-color-secondary-rgb), 0.8);
+  }
+}

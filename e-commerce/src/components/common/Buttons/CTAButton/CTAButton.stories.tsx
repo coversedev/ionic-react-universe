@@ -12,9 +12,6 @@ const meta: Meta<typeof CTAButton> = {
    */
   title: "Buttons/CTAButton",
   component: CTAButton,
-  args: {
-    children: "Button",
-  },
   tags: ["autodocs"],
 };
 export default meta;

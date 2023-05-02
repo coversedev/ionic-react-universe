@@ -1,0 +1,44 @@
+.started-btn {
+  --border-radius: 8px;
+  --box-shadow: none;
+
+  ion-label {
+    margin-right: 1.5rem;
+  }
+
+  .logo {
+    background: var(--ion-color-primary-contrast);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    border-radius: 8px;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em var(--ion-color-primary-shade);
+    right: -0.8em;
+    transition: all 0.3s;
+
+    ion-icon {
+      width: 1.1em;
+      transition: transform 0.3s;
+      color: var(--ion-color-primary);
+    }
+  }
+
+  &:hover {
+    .logo {
+      width: 117%;
+
+      ion-icon {
+        transform: translateX(0.1em);
+      }
+    }
+  }
+
+  &:active {
+    .logo {
+      transform: scale(0.95);
+    }
+  }
+}

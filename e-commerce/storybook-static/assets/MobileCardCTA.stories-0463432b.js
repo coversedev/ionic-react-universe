@@ -1,0 +1,6 @@
+import{a as o,j as e}from"./jsx-runtime-9a6f6fa0.js";import{d as i,e as l,f as d,g as m,h as c,c as p,s as h}from"./index-441b9941.js";import{M as r}from"./MobileStoreButton-8e6a85dd.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-96c5f47c.js";import"./iframe-aeb6579b.js";import"../sb-preview/runtime.mjs";import"./index-e2b72ed9.js";import"./index-2e4736b8.js";const u=()=>o(i,{children:[o(l,{children:[e(d,{className:"small-text",children:"Download Now!"}),e(m,{className:"title",children:"Download our mobile application."})]}),o(c,{className:"desc",children:[e(p,{children:"Download Lorem mobile banking app for IOS & Android to manage your online money."}),o("div",{className:"buttons",children:[e(r,{type:"Play",style:"stylish",href:"#"}),e(r,{type:"Apple",style:"stylish",href:"#"})]})]})]});h();const N={title:"Cards/MobileCardCTA",component:u,tags:["autodocs"]},a={args:{}};var s,t,n;a.parameters={...a.parameters,docs:{...(s=a.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {
+    //👇 The args you need here will depend on your component
+  }
+}`,...(n=(t=a.parameters)==null?void 0:t.docs)==null?void 0:n.source}}};const T=["Raised"];export{a as Raised,T as __namedExportsOrder,N as default};
+//# sourceMappingURL=MobileCardCTA.stories-0463432b.js.map

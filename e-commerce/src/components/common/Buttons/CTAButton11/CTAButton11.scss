@@ -1,0 +1,33 @@
+.social-btn {
+  --border-radius: 8px;
+
+  ion-icon {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+  }
+
+  ion-label, ion-icon {
+    transition: all 0.45s ease-in-out;
+  }
+
+  &:hover {
+    --background: var(--ion-color-primary);
+    --background-activated: var(--ion-color-primary);
+    --background-focused: var(--ion-color-primary);
+    --background-hover: var(--ion-color-primary);
+
+    --color: var(--ion-color-primary-contrast);
+    --color-activated: var(--ion-color-primary-contrast);
+    --color-focused: var(--ion-color-primary-contrast);
+    --color-hover: var(--ion-color-primary-contrast);
+
+    ion-label {
+      margin-right: 20px;
+    }
+
+    ion-icon {
+      opacity: 1;
+    }
+  }
+}

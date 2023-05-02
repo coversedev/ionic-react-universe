@@ -1,0 +1,2 @@
+import{j as t}from"./jsx-runtime-9a6f6fa0.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";const a={parameters:{actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}},darkMode:{darkClass:"dark",lightClass:"light",stylePreview:!0}},decorators:[e=>t("section",{className:"stories-wrapper-coverse",children:t("div",{style:{margin:"3em",display:"flex",alignItems:"center",justifyContent:"center"},children:t(e,{})})})]};export{a as default};
+//# sourceMappingURL=preview-a83a9508.js.map

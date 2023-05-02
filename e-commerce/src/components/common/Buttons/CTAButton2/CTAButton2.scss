@@ -1,0 +1,16 @@
+.ui-btn {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  &:hover {
+    --background: var(--ion-color-primary);
+    --background-activated: var(--ion-color-primary);
+    --background-focused: var(--ion-color-primary);
+    --background-hover: var(--ion-color-primary);
+
+    --color: var(--ion-color-primary-contrast);
+    --color-activated: var(--ion-color-primary-contrast);
+    --color-focused: var(--ion-color-primary-contrast);
+    --color-hover: var(--ion-color-primary-contrast);
+
+    --box-shadow: 0 0 0 5px rgba(var(--ion-color-primary-rgb), 0.3);
+  }
+}
